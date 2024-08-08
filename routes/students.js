@@ -50,7 +50,7 @@ router.route("/update/:id").put(async(req,res)=>{    //Update
         nic
     }
     const update = await Student.findByIdAndUpdate(userId,updateStudent).then(()=>{ //(Update)
-        res.status(200).send({states:"user updated",user:update})
+        res.status(200).send({states:"user updated"})
 
     }).catch((err)=>{
         console.log(err);
@@ -64,7 +64,7 @@ router.route("/update/:id").put(async(req,res)=>{    //Update
 router.route("/delete/:id").delete(async(req,res)=>{   //(Delete)
     let userid = req.params.id;
 
-    await Student.findByIdAndDelete(userId)
+    await Student.findByIdAndDelete(userid)
     .then(()=>{
         res.states(200).send({states: "user deleted"});
 
