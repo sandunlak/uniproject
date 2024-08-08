@@ -25,7 +25,8 @@ connection.once("open",() => {  //Open the created connection
     console.log("MongoDb connection success!");
 })
 
-const studentRouter = require("./routes/students.js");
+const studentRouter = require("./routes/students.js"); //Add students.js file
+
 
 
 app.use("/student",studentRouter);
