@@ -64,7 +64,7 @@ export default function Header() {
 
       {/*page navigation bar */}
 
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <div className="mx-auto">
             <button
@@ -84,9 +84,9 @@ export default function Header() {
             >
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link">
-                    {" "}
-                    Home{" "}
+                  <Link to="/ItemListView" className="nav-link">
+                    
+                    Home
                   </Link>
                 </li>
                 <li className="nav-item">
