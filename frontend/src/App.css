@@ -36,3 +36,97 @@
     transform: rotate(360deg);
   }
 }
+
+/* Basic navbar styling */
+.navbar {
+  background-color: #f8f9fa; /* Light background color for the navbar */
+}
+
+/* Styling for navigation links */
+.navbar-nav .nav-link {
+  color: #000; /* Default text color */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #007bff; /* Color change on hover/focus */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Dropdown menu styling */
+.navbar-nav .dropdown-menu {
+  background-color: #fff; /* Background color of dropdown menu */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #000; /* Default color for dropdown items */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:focus {
+  background-color: #007bff; /* Background color change on hover/focus */
+  color: #fff; /* Text color change on hover/focus */
+}
+
+
+
+/* Style for the heart icon button */
+.btn-outline-light {
+  border-color: #f8f9fa; /* Default border color */
+  color: #f8f9fa; /* Default text color */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.btn-outline-light .bi-heart {
+  color: #f8f9fa; /* Default icon color */
+  transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+.btn-outline-light:hover .bi-heart,
+.btn-outline-light:focus .bi-heart {
+  color: rgb(255, 255, 255); /* Change icon color to red on hover/focus */
+  background-color: #ff0000;
+}
+
+
+
+/* Style for the even smaller heart shape */
+.heart {
+  width: 20px; /* Even smaller width */
+  height: 20px; /* Even smaller height */
+  background-color: #f00; /* Default red color */
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 5px; /* Adjusted margin for smaller heart */
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  width: 20px; /* Even smaller width */
+  height: 20px; /* Even smaller height */
+  background-color: #f00; /* Default red color */
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart:before {
+  top: -10px; /* Adjusted position for smaller heart */
+  left: 0;
+}
+
+.heart:after {
+  top: 0;
+  left: 10px; /* Adjusted position for smaller heart */
+}
+
+.heart:hover {
+  background-color: #c00; /* Darker red on hover */
+}
+
+.heart:hover:before,
+.heart:hover:after {
+  background-color: #c00; /* Darker red on hover */
+}
