@@ -26,10 +26,13 @@ connection.once("open",() => {  //Open the created connection
 })
 
 const studentRouter = require("./routes/students.js"); //Add students.js file
-
+const registerRouter = require("./routes/register.js"); // Import your new router
+const addproductRouter = require("./routes/addproduct.js");
 
 
 app.use("/student",studentRouter);
+app.use("/registermodel", registerRouter);
+app.use("/addproductmodel", addproductRouter); // Use the new router
 
 app.listen(PORT,() => {
     console.log(`server is up and running on port number: ${PORT}`)
