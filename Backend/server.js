@@ -26,11 +26,9 @@ connection.once("open",() => {  //Open the created connection
 })
 
 
-const itemRouter = require("./routes/items");
+const itemRouter = require("./routes/items"); //back end URL for item list manupulation
 app.use("/item",itemRouter);
 
-// const studentRouter = require("./routes/students.js"); //Add students.js file
-// app.use("/student",studentRouter);
 
 app.listen(PORT,() => {
     console.log(`server is up and running on port number: ${PORT}`)

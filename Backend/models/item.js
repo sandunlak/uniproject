@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+
+
+
+
+
 const ItemSchema  = new Schema({
 
     name: {
@@ -15,13 +20,42 @@ const ItemSchema  = new Schema({
         type: String, 
         required: true
     },
-    image: {
-        type: String,
-         required: true
-        },
+   
     category: {
         type: String, 
-        required: true},
+        required: true
+    },
+    brand: {
+        type: String,
+        required: false
+    },
+    features: {
+        type: Array,
+        required: false
+    },
+    material: {
+        type: String,
+        required: false
+    },
+    condition:{
+        type: String,
+        required: false
+    },
+    images: [
+        {
+          data: Buffer, // Store image data as binary
+          contentType: String // Store the image content type (e.g., 'image/jpeg')
+        }
+      ],
+    }, 
+    {
+      timestamps: true, 
+    // seller:{
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'User',
+    //     required: true
+    // }
+
     
     });
 

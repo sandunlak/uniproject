@@ -6,7 +6,11 @@ import {BrowserRouter as Router,Route, Routes} from "react-router-dom";
 import Auctions from './components/Auctions';
 import AuctionHouses from './components/AuctionHouses';
 import Footer from './components/Footer';
-import ItemListView from './components/ItemsListView'
+
+
+import ItemListPage from '../src/components/ItemListPage';
+import CreateItemListing from './components/CreateItemListing';
+import DisplayData from './components/DisplatData';
 
 function App() {
   return (
@@ -20,11 +24,15 @@ function App() {
 
           <Route path="/Auctions" element={<Auctions/>} />
           <Route path="/AuctionHouses" element={<AuctionHouses/>} />
+          <Route path="/ItemListView" element={<ItemListPage/>} />
+          <Route path="/AddItems" element={<CreateItemListing/>} />
+          <Route path="/items" element={<DisplayData />} />
 
 
 
 
-          <Route path="/ItemListView" element={<ItemListView/>} />
+
+         
           
         </Routes>
 

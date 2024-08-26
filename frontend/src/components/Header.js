@@ -114,12 +114,12 @@ export default function Header() {
                   <ul className="dropdown-menu">
                     <li>
                       <a className="dropdown-item" href="#">
-                        Antique Items
+                        Arts
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="#">
-                        Arts
+                        jewellery
                       </a>
                     </li>
 
