@@ -2,14 +2,17 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 
+
 export default function Header() {
+
+  
   return (
     <div>
       <nav className="navbar" style={{ background: "black" }}>
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <a
             className="navbar-brand"
-            href="#"
+            href="/ItemListView"
             style={{ color: "white", fontSize: 36 }}
           >
             <img
@@ -50,7 +53,13 @@ export default function Header() {
               <div className="heart"></div>
             </button>
             <button className="btn btn-outline-light me-2" type="button">
-              Sign In
+              Login
+            </button>
+            <button className="btn btn-outline-light me-2" type="button">
+              <Link  to="/ChooseRole"
+              style={{ color: 'white', textDecoration: 'none' }}
+
+              >Sign Up</Link>
             </button>
             <button className="btn btn-outline-light" type="button">
               <i
@@ -113,20 +122,16 @@ export default function Header() {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Arts
-                      </a>
+                      <Link to="/Arts" className="dropdown-item">Art</Link>
+                      
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
-                        jewellery
-                      </a>
+                      <Link to="/Jewellery" className="dropdown-item">Jewellery</Link>
+                      
                     </li>
 
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Collectibles
-                      </a>
+                    <Link to="/Collectibles" className="dropdown-item">Collectibles</Link>
                     </li>
                   </ul>
                 </li>

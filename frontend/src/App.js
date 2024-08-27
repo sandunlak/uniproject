@@ -10,7 +10,12 @@ import Footer from './components/Footer';
 
 import ItemListPage from '../src/components/ItemListPage';
 import CreateItemListing from './components/CreateItemListing';
-import DisplayData from './components/DisplatData';
+
+import Arts from './components/Arts';
+import Jewellery from './components/Jewellery';
+import Collectibles from './components/Collectibles';
+import SellerSignUp from './components/SellerSignUp';
+import ChooseRole from './components/BidderOrSeller';
 
 function App() {
   return (
@@ -26,14 +31,12 @@ function App() {
           <Route path="/AuctionHouses" element={<AuctionHouses/>} />
           <Route path="/ItemListView" element={<ItemListPage/>} />
           <Route path="/AddItems" element={<CreateItemListing/>} />
-          <Route path="/items" element={<DisplayData />} />
-
-
-
-
-
-         
           
+          <Route path="/Arts" element={<Arts/>}/>
+          <Route path="/Jewellery" element={<Jewellery/>}/>
+          <Route path="/Collectibles" element={<Collectibles/>}/>
+          <Route path="/SellerSignUp" element={<SellerSignUp/>}/>
+          <Route path="/ChooseRole" element={<ChooseRole/>}/>
         </Routes>
 
         <Footer />
